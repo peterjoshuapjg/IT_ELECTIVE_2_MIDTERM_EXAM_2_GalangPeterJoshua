@@ -1,0 +1,18 @@
+﻿@using ClinicPatientVisitMonitoringSystem.Models
+@model PatientVisit
+@{
+    ViewData["Title"] = "Complete Consultation";
+}
+<div class="page-heading"><a asp-action="Details" asp-route-id="@Model.Id" class="text-decoration-none">← Back to details</a><h1 class="h2 mt-2">Complete Consultation</h1><p class="text-muted">Confirm that consultation for <strong>@Model.VisitNumber</strong> is complete.</p></div>
+<div class="form-card">
+    <div class="row g-3 mb-3">
+        <div class="col-md-6"><div class="detail-label">Patient</div><div class="detail-value">@Model.FirstName @Model.LastName</div></div>
+        <div class="col-md-6"><div class="detail-label">Physician</div><div class="detail-value">@Model.Physician</div></div>
+        <div class="col-md-6"><div class="detail-label">Current Status</div><div class="detail-value">@Model.Status</div></div>
+        <div class="col-md-6"><div class="detail-label">Arrival</div><div class="detail-value">@Model.ArrivalDateTime.ToString("MMM dd, yyyy hh:mm tt")</div></div>
+    </div>
+    <form asp-action="Complete" asp-route-id="@Model.Id" method="post">
+        <div class="mb-3"><label class="form-label" for="notes">Notes</label><textarea class="form-control" id="notes" name="notes" rows="4">@Model.Notes</textarea></div>
+        <div class="d-flex justify-content-end gap-2"><a asp-action="Details" asp-route-id="@Model.Id" class="btn btn-outline-secondary">Cancel</a><button class="btn btn-success" type="submit">Mark as Completed</button></div>
+    </form>
+</div>

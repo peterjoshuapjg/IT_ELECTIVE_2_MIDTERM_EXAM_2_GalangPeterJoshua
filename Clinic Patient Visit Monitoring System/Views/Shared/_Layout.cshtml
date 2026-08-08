@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | ClinicFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <script>
+            (function () {
+                var savedTheme = localStorage.getItem('clinicflow-theme');
+                if (savedTheme === 'dark') {
+                    document.documentElement.setAttribute('data-theme', 'dark');
+                }
+            })();
+    </script>
+</head>
+<body>
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <div class="app-shell">
+            <aside class="sidebar" id="clinicSidebar">
+                <div class="brand-block">
+                    <div class="brand-logo-card">
+                        <img src="~/images/logo.png" alt="Clinic Monitoring System logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+                        <div class="brand-logo-fallback" style="display:none">
+                            <div class="brand-symbol"><i class="bi bi-plus-lg"></i></div>
+                            <div>
+                                <div class="brand-name">Clinic<span>Flow</span></div>
+                                <div class="brand-subtitle">Patient monitoring</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="side-nav" aria-label="Main navigation">
+                    <div class="nav-label">Main menu</div>
+                    <a class="side-link @(ViewContext.RouteData.Values["action"]?.ToString() == "Index" ? "active" : "")" asp-controller="PatientVisit" asp-action="Index">
+                        <span class="side-link-icon"><i class="bi bi-grid-1x2-fill"></i></span><span>Overview</span>
+                    </a>
+                    <a class="side-link @(ViewContext.RouteData.Values["action"]?.ToString() == "Create" ? "active" : "")" asp-controller="PatientVisit" asp-action="Create">
+                        <span class="side-link-icon"><i class="bi bi-person-plus-fill"></i></span><span>Register Visit</span>
+                    </a>
+
+                    <div class="nav-label">Patients</div>
+                    <a class="side-link @(ViewContext.RouteData.Values["action"]?.ToString() == "Patients" ? "active" : "")" asp-controller="PatientVisit" asp-action="Patients">
+                        <span class="side-link-icon"><i class="bi bi-people-fill"></i></span><span>Patients</span>
+                    </a>
+
+                    <div class="nav-label">Clinic</div>
+                    <div class="clinic-status-link">
+                        <span class="online-dot"></span>
+                        <span>Clinic is open</span>
+                        <span class="ms-auto status-time">Today</span>
+                    </div>
+
+                    <div class="nav-label">Account</div>
+                    <a class="side-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Account" && ViewContext.RouteData.Values["action"]?.ToString() == "Settings" ? "active" : "")" asp-controller="Account" asp-action="Settings">
+                        <span class="side-link-icon"><i class="bi bi-gear-fill"></i></span><span>Settings</span>
+                    </a>
+                </nav>
+
+                <div class="sidebar-bottom">
+                    <div class="support-card">
+                        <div class="support-icon"><i class="bi bi-headset"></i></div>
+                        <div>
+                            <strong>Reception workspace</strong>
+                            <span>Ready for today's visits</span>
+                        </div>
+                    </div>
+                    <form asp-controller="Account" asp-action="Logout" method="post">
+                        <button class="side-link logout-link w-100 border-0" type="submit">
+                            <span class="side-link-icon"><i class="bi bi-box-arrow-left"></i></span><span>Sign out</span>
+                        </button>
+                    </form>
+                </div>
+            </aside>
+
+            <div class="main-shell">
+                <header class="topbar">
+                    <button class="mobile-menu" type="button" onclick="document.getElementById('clinicSidebar').classList.toggle('show')" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="topbar-title">
+                        <span class="topbar-kicker">Front desk</span>
+                        <span class="topbar-page">@ViewData["Title"]</span>
+                    </div>
+                    <div class="topbar-actions">
+                        <div class="queue-chip"><span class="online-dot"></span> Live queue</div>
+                        <div class="notification-button"><i class="bi bi-bell"></i><span></span></div>
+                        <a class="notification-button" asp-controller="Account" asp-action="Settings" aria-label="Settings" title="Settings">
+                            <i class="bi bi-gear"></i>
+                        </a>
+                        <div class="user-menu">
+                            <div class="user-avatar">@((User.Identity?.Name ?? "R").Substring(0, 1).ToUpperInvariant())</div>
+                            <div class="user-copy">
+                                <strong>@User.Identity?.Name</strong>
+                                <small>Reception staff</small>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <main class="content-area">
+                    @if (TempData["Success"] is string success)
+                    {
+                        <div class="custom-alert success-alert" role="alert"><i class="bi bi-check-circle-fill"></i><span>@success</span><button type="button" class="alert-close" onclick="this.parentElement.remove()"><i class="bi bi-x"></i></button></div>
+                    }
+                    @if (TempData["Error"] is string error)
+                    {
+                        <div class="custom-alert error-alert" role="alert"><i class="bi bi-exclamation-circle-fill"></i><span>@error</span><button type="button" class="alert-close" onclick="this.parentElement.remove()"><i class="bi bi-x"></i></button></div>
+                    }
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    }
+    else
+    {
+        <main class="auth-page">
+            @RenderBody()
+        </main>
+    }
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

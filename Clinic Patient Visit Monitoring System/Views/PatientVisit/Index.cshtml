@@ -1,0 +1,257 @@
+﻿@using ClinicPatientVisitMonitoringSystem.Models
+@model IEnumerable<PatientVisit>
+@{
+    ViewData["Title"] = "Overview";
+    var visits = Model.ToList();
+    var waiting = visits.Count(x => x.Status == "Waiting");
+    var inConsultation = visits.Count(x => x.Status == "In Consultation");
+    var completed = visits.Count(x => x.Status == "Completed");
+    var total = visits.Count;
+    var today = visits.Count(x => x.ArrivalDateTime.Date == DateTime.Today);
+    var activeSearch = (string?)ViewBag.Search;
+}
+
+<div class="dashboard-head">
+    <div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Today, @DateTime.Now.ToString("dddd, MMMM d")</div>
+        <h1>Good morning, @User.Identity?.Name</h1>
+        <p>Here is the current patient flow at the reception desk.</p>
+    </div>
+    <a class="primary-action" asp-action="Create"><i class="bi bi-plus-lg"></i> Register patient</a>
+</div>
+
+<div class="stat-grid">
+    <div class="stat-card stat-main">
+        <div class="stat-icon purple"><i class="bi bi-people-fill"></i></div>
+        <div class="stat-copy"><span>Total visits</span><strong>@total</strong><small>@today today</small></div>
+        <div class="stat-spark"><span style="height:35%"></span><span style="height:55%"></span><span style="height:42%"></span><span style="height:72%"></span><span style="height:60%"></span><span style="height:88%"></span><span style="height:76%"></span></div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon amber"><i class="bi bi-hourglass-split"></i></div>
+        <div class="stat-copy"><span>Waiting</span><strong>@waiting</strong><small>Needs attention</small></div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon blue"><i class="bi bi-person-video3"></i></div>
+        <div class="stat-copy"><span>In consultation</span><strong>@inConsultation</strong><small>Currently being seen</small></div>
+    </div>
+    <div class="stat-card">
+        <div class="stat-icon green"><i class="bi bi-check2-circle"></i></div>
+        <div class="stat-copy"><span>Completed</span><strong>@completed</strong><small>Consultations closed</small></div>
+    </div>
+</div>
+
+<div class="workspace-grid">
+    <section class="panel visits-panel">
+        <div class="panel-head">
+            <div>
+                <h2>Today's patient queue</h2>
+                <p>Manage arrivals and consultation progress.</p>
+            </div>
+            <div class="view-toggle" role="group" aria-label="Patient list view">
+                <button id="cardViewBtn" class="view-btn active" type="button" title="Card view" aria-label="Card view" aria-pressed="true">
+                    <i class="bi bi-grid-3x3-gap-fill"></i>
+                </button>
+                <button id="listViewBtn" class="view-btn" type="button" title="List view" aria-label="List view" aria-pressed="false">
+                    <i class="bi bi-list-ul"></i>
+                </button>
+            </div>
+        </div>
+
+        <form asp-action="Index" method="get" class="filter-row">
+            <div class="search-input">
+                <i class="bi bi-search"></i>
+                <input type="search" name="search" value="@activeSearch" placeholder="Search patient, visit no., physician..." />
+            </div>
+            <button class="filter-btn" type="submit"><i class="bi bi-search"></i> Search</button>
+            @if (!string.IsNullOrWhiteSpace(activeSearch))
+            {
+                <a class="clear-filter" asp-action="Index">Clear</a>
+            }
+        </form>
+
+        @if (!visits.Any())
+        {
+            <div class="empty-state">
+                <div class="empty-icon"><i class="bi bi-person-vcard"></i></div>
+                <h3>No patient visits found</h3>
+                <p>Register a patient visit to start monitoring the queue.</p>
+                <a class="primary-action" asp-action="Create"><i class="bi bi-plus-lg"></i> Register visit</a>
+            </div>
+        }
+        else
+        {
+            <div id="cardView" class="visit-grid">
+                @foreach (var item in visits)
+                {
+                    var initials = $"{item.FirstName.FirstOrDefault()}{item.LastName.FirstOrDefault()}".ToUpperInvariant();
+                    var statusClass = item.Status switch
+                    {
+                        "Waiting" => "waiting",
+                        "In Consultation" => "consulting",
+                        _ => "completed"
+                    };
+                    var visitTypeClass = item.VisitType.ToLowerInvariant().Contains("follow") ? "follow-up" : "new-visit";
+                    <article class="visit-card">
+                        <div class="visit-card-top">
+                            <div class="patient-avatar">@initials</div>
+                            <div class="patient-info">
+                                <h3>@item.FirstName @item.LastName</h3>
+                                <span>@item.Age years <i></i> @item.Sex</span>
+                            </div>
+                            <div class="card-menu dropdown">
+                                <button class="icon-button" data-bs-toggle="dropdown" aria-label="Actions"><i class="bi bi-three-dots-vertical"></i></button>
+                                <ul class="dropdown-menu dropdown-menu-end">
+                                    <li><a class="dropdown-item" asp-action="Details" asp-route-id="@item.Id"><i class="bi bi-person-lines-fill"></i> View details</a></li>
+                                    <li><a class="dropdown-item" asp-action="Edit" asp-route-id="@item.Id"><i class="bi bi-pencil"></i> Edit visit</a></li>
+                                    @if (item.Status == "Waiting")
+                                    {
+                                        <li><form asp-action="Start" asp-route-id="@item.Id" method="post"><button class="dropdown-item" type="submit"><i class="bi bi-play-circle"></i> Start consultation</button></form></li>
+                                    }
+                                    @if (item.Status != "Completed")
+                                    {
+                                        <li><a class="dropdown-item" asp-action="Complete" asp-route-id="@item.Id"><i class="bi bi-check-circle"></i> Complete</a></li>
+                                    }
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="patient-details">
+                            <div><span>Visit no.</span><strong>@item.VisitNumber</strong></div>
+                            <div><span>Contact</span><strong>@item.ContactNumber</strong></div>
+                            <div><span>Arrival</span><strong>@item.ArrivalDateTime.ToString("hh:mm tt")</strong></div>
+                        </div>
+
+                        <div class="complaint-box">
+                            <span>Chief complaint</span>
+                            <p>@item.ChiefComplaint</p>
+                        </div>
+
+                        <div class="visit-footer">
+                            <div>
+                                <span class="status-pill @statusClass"><i></i>@item.Status</span>
+                                <span class="visit-type @visitTypeClass">@item.VisitType</span>
+                            </div>
+                            <span class="physician-name"><i class="bi bi-heart-pulse"></i> @item.Physician</span>
+                        </div>
+                    </article>
+                }
+            </div>
+
+            <div id="listView" class="visit-list d-none">
+                <div class="visit-list-head">
+                    <span>Patient</span>
+                    <span>Visit no.</span>
+                    <span>Physician</span>
+                    <span>Arrival</span>
+                    <span>Status</span>
+                    <span>Action</span>
+                </div>
+                @foreach (var item in visits)
+                {
+                    var initials = $"{item.FirstName.FirstOrDefault()}{item.LastName.FirstOrDefault()}".ToUpperInvariant();
+                    var statusClass = item.Status switch
+                    {
+                        "Waiting" => "waiting",
+                        "In Consultation" => "consulting",
+                        _ => "completed"
+                    };
+                    <div class="visit-list-row" role="button" tabindex="0" data-details-url="@Url.Action("Details", new { id = item.Id })" aria-label="Open details for @item.FirstName @item.LastName">
+                        <div class="list-patient">
+                            <div class="mini-avatar">@initials</div>
+                            <div>
+                                <strong>@item.FirstName @item.LastName</strong>
+                                <span>@item.Age years · @item.Sex</span>
+                            </div>
+                        </div>
+                        <span class="list-value">@item.VisitNumber</span>
+                        <span class="list-value">@item.Physician</span>
+                        <span class="list-value">@item.ArrivalDateTime.ToString("hh:mm tt")</span>
+                        <span><span class="status-pill @statusClass"><i></i>@item.Status</span></span>
+                        <div class="list-actions" onclick="event.stopPropagation()">
+                            <a class="list-action" asp-action="Details" asp-route-id="@item.Id" title="View details"><i class="bi bi-arrow-up-right-square"></i></a>
+                            <a class="list-action" asp-action="Edit" asp-route-id="@item.Id" title="Edit visit"><i class="bi bi-pencil"></i></a>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+
+    <aside class="panel side-summary">
+        <div class="panel-head compact">
+            <div><h2>Queue overview</h2><p>Live status breakdown</p></div>
+            <span class="live-badge"><i></i> Live</span>
+        </div>
+        <div class="queue-summary">
+            <div class="queue-line"><div class="queue-label"><span class="queue-dot amber"></span>Waiting</div><strong>@waiting</strong></div>
+            <div class="progress-track"><span style="width:@(total == 0 ? 0 : waiting * 100 / total)%"></span></div>
+            <div class="queue-line"><div class="queue-label"><span class="queue-dot blue"></span>In consultation</div><strong>@inConsultation</strong></div>
+            <div class="progress-track"><span class="blue-fill" style="width:@(total == 0 ? 0 : inConsultation * 100 / total)%"></span></div>
+            <div class="queue-line"><div class="queue-label"><span class="queue-dot green"></span>Completed</div><strong>@completed</strong></div>
+            <div class="progress-track"><span class="green-fill" style="width:@(total == 0 ? 0 : completed * 100 / total)%"></span></div>
+        </div>
+
+        <div class="summary-divider"></div>
+
+        <div class="next-section">
+            <div class="mini-heading"><span>Next in queue</span><a asp-action="Index">View all</a></div>
+            @foreach (var next in visits.Where(x => x.Status != "Completed").OrderBy(x => x.ArrivalDateTime).Take(3))
+            {
+                <a class="next-patient" asp-action="Details" asp-route-id="@next.Id">
+                    <div class="mini-avatar">@next.FirstName.FirstOrDefault()@next.LastName.FirstOrDefault()</div>
+                    <div class="flex-grow-1"><strong>@next.FirstName @next.LastName</strong><span>@next.VisitNumber · @next.ArrivalDateTime.ToString("hh:mm tt")</span></div>
+                    <i class="bi bi-chevron-right"></i>
+                </a>
+            }
+            @if (!visits.Any(x => x.Status != "Completed"))
+            {
+                <div class="no-next">No patients waiting.</div>
+            }
+        </div>
+
+        <a class="secondary-action w-100" asp-action="Create"><i class="bi bi-person-plus"></i> Add another visit</a>
+    </aside>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cardButton = document.getElementById('cardViewBtn');
+            const listButton = document.getElementById('listViewBtn');
+            const cardView = document.getElementById('cardView');
+            const listView = document.getElementById('listView');
+
+            if (!cardButton || !listButton || !cardView || !listView) return;
+
+            function setView(view) {
+                const isList = view === 'list';
+                cardView.classList.toggle('d-none', isList);
+                listView.classList.toggle('d-none', !isList);
+                cardButton.classList.toggle('active', !isList);
+                listButton.classList.toggle('active', isList);
+                cardButton.setAttribute('aria-pressed', (!isList).toString());
+                listButton.setAttribute('aria-pressed', isList.toString());
+                localStorage.setItem('clinicVisitView', view);
+            }
+
+            cardButton.addEventListener('click', function() { setView('card'); });
+            listButton.addEventListener('click', function() { setView('list'); });
+
+            const savedView = localStorage.getItem('clinicVisitView');
+            if (savedView === 'list') setView('list');
+
+            document.querySelectorAll('.visit-list-row').forEach(function(row) {
+                const url = row.dataset.detailsUrl;
+                row.addEventListener('click', function() {
+                    if (url) window.location.href = url;
+                });
+                row.addEventListener('keydown', function(event) {
+                    if ((event.key === 'Enter' || event.key === ' ') && url) {
+                        event.preventDefault();
+                        window.location.href = url;
+                    }
+                });
+            });
+        });
+    </script>
+}

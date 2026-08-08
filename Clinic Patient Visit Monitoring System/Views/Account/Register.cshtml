@@ -1,0 +1,62 @@
+﻿@using ClinicPatientVisitMonitoringSystem.Models
+@model RegisterViewModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout";
+}
+<div class="auth-shell auth-shell-reverse">
+    <div class="auth-visual">
+        <div class="auth-visual-content">
+            <div class="auth-visual-logo">
+                <img src="~/images/logo.png" alt="Clinic Monitoring System logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'" />
+                <div class="brand-mark-fallback-icon" style="display:none"><i class="bi bi-plus-lg"></i></div>
+            </div>
+            <span class="auth-visual-eyebrow"><i class="bi bi-person-plus-fill"></i> Join the team</span>
+            <h2>Set up your reception account in minutes.</h2>
+            <p>Create your login to start registering patient visits and keeping the front desk queue up to date.</p>
+            <ul class="auth-feature-list">
+                <li><i class="bi bi-check-circle-fill"></i> Your own secure login</li>
+                <li><i class="bi bi-check-circle-fill"></i> Instant access after signup</li>
+                <li><i class="bi bi-check-circle-fill"></i> No setup or approval wait</li>
+            </ul>
+        </div>
+    </div>
+    <div class="auth-form-side">
+        <div class="auth-card auth-card-wide">
+            <div class="mb-4">
+                <h1 class="h3 mt-1 mb-1">Create reception account</h1>
+                <p class="text-muted mb-0">Set up your workspace login to get started.</p>
+            </div>
+            <form asp-action="Register" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+                <div class="row g-3">
+                    <div class="col-md-6"><label asp-for="FirstName" class="form-label"></label><input asp-for="FirstName" class="form-control" /><span asp-validation-for="FirstName" class="text-danger"></span></div>
+                    <div class="col-md-6"><label asp-for="LastName" class="form-label"></label><input asp-for="LastName" class="form-control" /><span asp-validation-for="LastName" class="text-danger"></span></div>
+                    <div class="col-md-12"><label asp-for="Email" class="form-label"></label><input asp-for="Email" class="form-control" /><span asp-validation-for="Email" class="text-danger"></span></div>
+                    <div class="col-md-12"><label asp-for="Username" class="form-label"></label><input asp-for="Username" class="form-control" /><span asp-validation-for="Username" class="text-danger"></span></div>
+                    <div class="col-md-6">
+                        <label asp-for="Password" class="form-label"></label>
+                        <div class="password-field">
+                            <input asp-for="Password" class="form-control" autocomplete="new-password" />
+                            <button type="button" class="password-toggle" aria-label="Show password" onclick="togglePasswordVisibility(this)"><i class="bi bi-eye"></i></button>
+                        </div>
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="col-md-6">
+                        <label asp-for="ConfirmPassword" class="form-label"></label>
+                        <div class="password-field">
+                            <input asp-for="ConfirmPassword" class="form-control" autocomplete="new-password" />
+                            <button type="button" class="password-toggle" aria-label="Show password" onclick="togglePasswordVisibility(this)"><i class="bi bi-eye"></i></button>
+                        </div>
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <button class="btn btn-primary w-100 mt-4" type="submit">Create account</button>
+            </form>
+            <p class="text-center text-muted mt-4 mb-0">Already registered? <a asp-action="Login">Sign in</a></p>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

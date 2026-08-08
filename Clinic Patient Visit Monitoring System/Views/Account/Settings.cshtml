@@ -1,0 +1,108 @@
+﻿@using ClinicPatientVisitMonitoringSystem.Models
+@model SettingsViewModel
+@{
+    ViewData["Title"] = "Settings";
+}
+
+<div class="page-heading">
+    <h1 class="h2 mt-2">Settings</h1>
+    <p class="text-muted">Manage your profile, password and workspace preferences.</p>
+</div>
+
+<div class="settings-grid">
+    <div class="settings-card">
+        <div class="settings-card-head">
+            <div class="settings-card-icon"><i class="bi bi-person-badge-fill"></i></div>
+            <div>
+                <h2 class="h6 mb-0">Profile information</h2>
+                <span class="text-muted small">Update your name and email address.</span>
+            </div>
+        </div>
+        <form asp-controller="Account" asp-action="UpdateProfile" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3 small"></div>
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <label asp-for="FirstName" class="form-label"></label>
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName" class="text-danger small"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="LastName" class="form-label"></label>
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName" class="text-danger small"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Email" class="form-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger small"></span>
+                </div>
+                <div class="col-md-6">
+                    <label asp-for="Username" class="form-label"></label>
+                    <input asp-for="Username" class="form-control" disabled />
+                    <span class="text-muted small">Username cannot be changed.</span>
+                </div>
+            </div>
+            <button class="btn btn-primary mt-4" type="submit">Save changes</button>
+        </form>
+    </div>
+
+    <div class="settings-card">
+        <div class="settings-card-head">
+            <div class="settings-card-icon"><i class="bi bi-shield-lock-fill"></i></div>
+            <div>
+                <h2 class="h6 mb-0">Change password</h2>
+                <span class="text-muted small">Use a strong password you don't use elsewhere.</span>
+            </div>
+        </div>
+        <form asp-controller="Account" asp-action="ChangePassword" method="post">
+            <div class="mb-3">
+                <label class="form-label">Current Password</label>
+                <div class="password-field">
+                    <input type="password" name="CurrentPassword" class="form-control" autocomplete="current-password" placeholder="Enter current password" required />
+                    <button type="button" class="password-toggle" aria-label="Show password" onclick="togglePasswordVisibility(this)">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">New Password</label>
+                <div class="password-field">
+                    <input type="password" name="NewPassword" class="form-control" autocomplete="new-password" placeholder="Enter new password" minlength="6" required />
+                    <button type="button" class="password-toggle" aria-label="Show password" onclick="togglePasswordVisibility(this)">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Confirm New Password</label>
+                <div class="password-field">
+                    <input type="password" name="ConfirmNewPassword" class="form-control" autocomplete="new-password" placeholder="Re-enter new password" minlength="6" required />
+                    <button type="button" class="password-toggle" aria-label="Show password" onclick="togglePasswordVisibility(this)">
+                        <i class="bi bi-eye"></i>
+                    </button>
+                </div>
+            </div>
+            <button class="btn btn-primary mt-2" type="submit">Update password</button>
+        </form>
+    </div>
+
+    <div class="settings-card">
+        <div class="settings-card-head">
+            <div class="settings-card-icon"><i class="bi bi-sliders"></i></div>
+            <div>
+                <h2 class="h6 mb-0">Preferences</h2>
+                <span class="text-muted small">Personalize how ClinicFlow looks on this device.</span>
+            </div>
+        </div>
+        <div class="preference-row">
+            <div>
+                <strong>Dark mode</strong>
+                <div class="text-muted small">Switch between light and dark workspace themes.</div>
+            </div>
+            <label class="theme-switch">
+                <input type="checkbox" id="themeSwitch" onchange="toggleTheme(this.checked)">
+                <span class="theme-switch-slider"></span>
+            </label>
+        </div>
+    </div>
+</div>

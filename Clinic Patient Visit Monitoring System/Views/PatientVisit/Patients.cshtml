@@ -1,0 +1,84 @@
+﻿@using ClinicPatientVisitMonitoringSystem.Models
+@model IEnumerable<PatientSummary>
+@{
+    ViewData["Title"] = "Patients";
+    var patients = Model.ToList();
+    var activeSearch = (string?)ViewBag.Search;
+}
+
+<div class="dashboard-head">
+    <div>
+        <div class="eyebrow"><span class="eyebrow-dot"></span> Patient records</div>
+        <h1>Patients</h1>
+        <p>Everyone who has had a visit logged at this clinic.</p>
+    </div>
+    <a class="primary-action" asp-action="Create"><i class="bi bi-plus-lg"></i> Register patient</a>
+</div>
+
+<section class="panel visits-panel">
+    <div class="panel-head">
+        <div>
+            <h2>All patients</h2>
+            <p>@patients.Count patient@(patients.Count == 1 ? "" : "s") on file</p>
+        </div>
+    </div>
+
+    <form asp-action="Patients" method="get" class="filter-row">
+        <div class="search-input">
+            <i class="bi bi-search"></i>
+            <input type="search" name="search" value="@activeSearch" placeholder="Search patient name or contact..." />
+        </div>
+        <button class="filter-btn" type="submit"><i class="bi bi-search"></i> Search</button>
+        @if (!string.IsNullOrWhiteSpace(activeSearch))
+        {
+            <a class="clear-filter" asp-action="Patients">Clear</a>
+        }
+    </form>
+
+    @if (!patients.Any())
+    {
+        <div class="empty-state">
+            <div class="empty-icon"><i class="bi bi-people"></i></div>
+            <h3>No patients found</h3>
+            <p>Patients appear here once a visit has been registered for them.</p>
+            <a class="primary-action" asp-action="Create"><i class="bi bi-plus-lg"></i> Register visit</a>
+        </div>
+    }
+    else
+    {
+        <div class="visit-list">
+            <div class="visit-list-head patient-list-row">
+                <span>Patient</span>
+                <span>Contact</span>
+                <span>Last physician</span>
+                <span>Total visits</span>
+                <span>Last visit</span>
+                <span>Status</span>
+            </div>
+            @foreach (var p in patients)
+            {
+                var initials = $"{p.FirstName.FirstOrDefault()}{p.LastName.FirstOrDefault()}".ToUpperInvariant();
+                var statusClass = p.LastStatus switch
+                {
+                    "Waiting" => "waiting",
+                    "In Consultation" => "consulting",
+                    _ => "completed"
+                };
+                <a class="visit-list-row patient-list-row" asp-action="Index" asp-route-search="@p.ContactNumber" aria-label="View visits for @p.FirstName @p.LastName">
+                    <div class="list-patient">
+                        <div class="mini-avatar">@initials</div>
+                        <div>
+                            <strong>@p.FirstName @p.LastName</strong>
+                            <span>@p.Age years · @p.Sex</span>
+                        </div>
+                    </div>
+                    <span class="list-value">@p.ContactNumber</span>
+                    <span class="list-value">@p.LastPhysician</span>
+                    <span class="list-value">@p.TotalVisits</span>
+                    <span class="list-value">@p.LastVisit.ToString("MMM d, yyyy")</span>
+                    <span><span class="status-pill @statusClass"><i></i>@p.LastStatus</span></span>
+                </a>
+            }
+        </div>
+    }
+</section>

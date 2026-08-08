@@ -1,0 +1,447 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\account\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\account\\settings.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\models\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:models\\settingsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\controllers\\accountcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:controllers\\accountcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\patientvisit\\patients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\patientvisit\\patients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\models\\patientsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:models\\patientsummary.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\patientvisit\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\patientvisit\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\patientvisit\\complete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\patientvisit\\complete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\controllers\\patientcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:controllers\\patientcontroller1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\patientvisit\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\patientvisit\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\patientvisit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\patientvisit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\views\\patientvisit\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:views\\patientvisit\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\repositories\\patientvisitrepository,cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:repositories\\patientvisitrepository,cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\clinic patient visit monitoring system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:clinic patient visit monitoring system.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:models\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\models\\patientvisit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:models\\patientvisit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|c:\\users\\joshua galang\\source\\repos\\it_elective_2_midterm_exam_2_galangpeterjoshua\\clinic patient visit monitoring system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2688704-7B64-A93D-D1B2-F71F140098E7}|Clinic Patient Visit Monitoring System.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SettingsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\SettingsViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\SettingsViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\SettingsViewModel.cs",
+              "RelativeToolTip": "Models\\SettingsViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T06:06:18.29Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Complete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Complete.cshtml",
+              "RelativeDocumentMoniker": "Views\\PatientVisit\\Complete.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Complete.cshtml",
+              "RelativeToolTip": "Views\\PatientVisit\\Complete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:37:28.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAcwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:36:43.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:36:00.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\UserRepository.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAA8wDcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:34:59.772Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PatientController1.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Controllers\\PatientController1.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientController1.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Controllers\\PatientController1.cs",
+              "RelativeToolTip": "Controllers\\PatientController1.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwIEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:31:23.318Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\PatientVisit\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Edit.cshtml",
+              "RelativeToolTip": "Views\\PatientVisit\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:41:04.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\PatientVisit\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Index.cshtml",
+              "RelativeToolTip": "Views\\PatientVisit\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:41:24.832Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:41:47.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAA4KAAAAAAAAAAAowD8KAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-08-08T04:42:03.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Settings.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Account\\Settings.cshtml",
+              "RelativeDocumentMoniker": "Views\\Account\\Settings.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Account\\Settings.cshtml",
+              "RelativeToolTip": "Views\\Account\\Settings.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T06:09:13.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-08-08T06:10:16.067Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\PatientVisit\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Create.cshtml",
+              "RelativeToolTip": "Views\\PatientVisit\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:37:58.804Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccountController1.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Controllers\\AccountController1.cs",
+              "RelativeDocumentMoniker": "Controllers\\AccountController1.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Controllers\\AccountController1.cs",
+              "RelativeToolTip": "Controllers\\AccountController1.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAcwLMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:30:41.291Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Patients.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Patients.cshtml",
+              "RelativeDocumentMoniker": "Views\\PatientVisit\\Patients.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Patients.cshtml",
+              "RelativeToolTip": "Views\\PatientVisit\\Patients.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T05:42:57.568Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PatientSummary.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\PatientSummary.cs",
+              "RelativeDocumentMoniker": "Models\\PatientSummary.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\PatientSummary.cs",
+              "RelativeToolTip": "Models\\PatientSummary.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T05:42:00.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:53:21.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\PatientVisit\\Details.cshtml",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Views\\PatientVisit\\Details.cshtml",
+              "RelativeToolTip": "Views\\PatientVisit\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-08-08T04:38:25.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:33:43.097Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:43:33.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "PatientVisitRepository,cs.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Repositories\\PatientVisitRepository,cs.cs",
+              "RelativeDocumentMoniker": "Repositories\\PatientVisitRepository,cs.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Repositories\\PatientVisitRepository,cs.cs",
+              "RelativeToolTip": "Repositories\\PatientVisitRepository,cs.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAcwE0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:34:39.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Clinic Patient Visit Monitoring System.csproj",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Clinic Patient Visit Monitoring System.csproj",
+              "RelativeDocumentMoniker": "Clinic Patient Visit Monitoring System.csproj",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Clinic Patient Visit Monitoring System.csproj",
+              "RelativeToolTip": "Clinic Patient Visit Monitoring System.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-08-08T04:34:09.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\RegisterViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\RegisterViewModel.cs",
+              "RelativeToolTip": "Models\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:33:23.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "PatientVisit.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\PatientVisit.cs",
+              "RelativeDocumentMoniker": "Models\\PatientVisit.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\PatientVisit.cs",
+              "RelativeToolTip": "Models\\PatientVisit.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwDEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:32:53.371Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\LoginViewModel.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Models\\LoginViewModel.cs",
+              "RelativeToolTip": "Models\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:32:35.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\Joshua Galang\\source\\repos\\IT_ELECTIVE_2_MIDTERM_EXAM_2_GalangPeterJoshua\\Clinic Patient Visit Monitoring System\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-08T04:30:58.135Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
